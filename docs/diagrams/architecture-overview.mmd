@@ -1,0 +1,7 @@
+graph TD
+  package__ankhorage_types["@ankhorage/types"]
+  entrypoint_src_index_ts["src/index.ts"]
+  package__ankhorage_types --> entrypoint_src_index_ts
+  module_src_index_test_ts["src/index.test.ts"]
+  package__ankhorage_types -.-> module_src_index_test_ts
+  module_src_index_ts["src/index.ts"]
