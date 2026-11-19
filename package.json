@@ -47,7 +47,9 @@
     "format": "ankhorage-prettier --write .",
     "format:check": "ankhorage-prettier --check .",
     "lint:fix": "ankhorage-eslint . --fix --max-warnings=0",
-    "changeset": "ankhorage-changeset"
+    "changeset": "ankhorage-changeset",
+    "changeset:status": "ankhorage-changeset status --since=origin/main",
+    "version-packages": "ankhorage-changeset version"
   },
   "devDependencies": {
     "@ankhorage/devtools": "^2.9.4",

@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "kind": "library",
+  "title": "@ankhorage/types",
+  "summary": "Publishes reusable TypeScript declarations through explicit package subpaths for independently released applications.",
+  "purpose": "Give independently released applications a portable package of shared TypeScript declarations, including feature-specific contracts such as ZORA types.",
+  "domain": "cross-package TypeScript contracts",
+  "responsibilities": [
+    "Publish reusable TypeScript declarations through intentional public package entrypoints.",
+    "Group related declarations by owner and expose feature-specific types through explicit subpaths such as @ankhorage/types/zora.",
+    "Keep shared type contracts portable for independent consumers."
+  ],
+  "boundaries": [
+    "Does not implement application workflows, UI components, runtime behavior, persistence, deployment, or infrastructure operations.",
+    "Does not replace feature-owning packages or execute application capabilities.",
+    "Does not require consumers to use an Ankhorage application, repository, or unpublished sibling source."
+  ],
+  "audience": [
+    "TypeScript application authors who need shared Ankhorage declarations without importing feature implementations.",
+    "Maintainers integrating feature-specific contracts, such as ZORA provider types, into independent applications."
+  ],
+  "useCases": [
+    "Import shared declarations from the package root or an explicit feature subpath.",
+    "Use ZORA contracts through imports such as import { type ZoraProvider } from '@ankhorage/types/zora'.",
+    "Share compile-time contracts between independently released applications and feature packages."
+  ],
+  "architecture": {
+    "role": "Portable TypeScript declaration library with topic-owned contracts and explicit public package subpaths.",
+    "invariants": [
+      "Consumers use published package entrypoints and declared dependencies rather than sibling source imports.",
+      "Declarations remain portable and do not require feature implementations, platform frameworks, or provider SDKs at runtime.",
+      "Each feature-specific contract is exposed through its intentional public subpath."
+    ]
+  },
+  "constraints": {
+    "platforms": ["TypeScript"],
+    "limitations": [
+      "Declarations describe compile-time contracts only and do not provide runtime implementations.",
+      "Consumers must use the matching feature package when they need the behavior represented by a declaration."
+    ]
+  }
+}

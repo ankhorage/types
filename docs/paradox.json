@@ -1,7 +1,8 @@
 {
   "packageName": "@ankhorage/types",
   "packageId": "@ankhorage/types",
-  "description": "Ankhorage Types",
+  "description": "Publishes reusable TypeScript declarations through explicit package subpaths for independently released applications.",
+  "purpose": "Give independently released applications a portable package of shared TypeScript declarations, including feature-specific contracts such as ZORA types.",
   "collaborators": true,
   "donation": {
     "account": "ankhorage"

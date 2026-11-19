@@ -5,7 +5,9 @@
 
 ![license: MIT](././docs/badges/license.svg) ![npm: v0.0.0](././docs/badges/npm.svg) ![runtime: bun](././docs/badges/runtime.svg) ![typescript: strict](././docs/badges/typescript.svg) ![eslint: checked](././docs/badges/eslint.svg) ![prettier: checked](././docs/badges/prettier.svg) ![build: checked](././docs/badges/build.svg) ![tests: configured](././docs/badges/tests.svg) ![paradox: canonical](././docs/badges/docs.svg)
 
-Ankhorage Types
+Publishes reusable TypeScript declarations through explicit package subpaths for independently released applications.
+
+Give independently released applications a portable package of shared TypeScript declarations, including feature-specific contracts such as ZORA types.
 
 ## Documentation
 
